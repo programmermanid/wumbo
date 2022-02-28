@@ -14,15 +14,18 @@
     <main>
         <section class="bg-secondary min-h-screen relative">
             <img src="assets/icons/rectangle-hero.svg" alt="" class="absolute right-0">
-            <div class="container relative pb-48">
+            <div class="container relative pb-28">
                 <nav class="pt-16 mb-16">
-                    <div class="flex justify-between items-center">
-                        <div class="">
+                    <div class="flex lg:flex-row flex-col lg:justify-between lg:items-center">
+                        <div class="flex flex-row justify-between">
                             <h1>
                                 <img src="assets/images/logo.png" alt="Logo">
                             </h1>
+                            <a href="javascript:;" id="hamburger-btn" class="text-5xl lg:hidden">
+                                ≡
+                            </a>
                         </div>
-                        <div class="flex justify-between items-center gap-12 mt-3">
+                        <div id="nav-link" class="hidden flex-col gap-4 mb-4 bg-white p-6 rounded-md lg:flex lg:rounded-none lg:p-0 lg:bg-opacity-0 lg:mb-0 lg:flex-row lg:justify-between lg:items-center lg:gap-12 mt-3">
                             <a href="javascript:;" class="font-bold">
                                 Top
                             </a>
@@ -39,12 +42,12 @@
                                 License
                             </a>
                         </div>
-                        <div class="mt-3">
+                        <div id="download-nav-btn" class="mt-3 hidden lg:block">
                             <a href="javascript:;" class="bg-white px-6 py-3 text-primary font-bold rounded-md">Download</a>
                         </div>
                     </div>
                 </nav>
-                <div class="grid grid-cols-2">
+                <div class="lg:grid lg:grid-cols-2">
                     <div class="flex flex-col justify-center">
                         <h2 class="text-dark text-6xl leading-tight mb-9">
                             Beautiful Design <br>
@@ -65,13 +68,13 @@
                             </a>
                         </div>
                     </div>
-                    <div class="flex flex-col justify-center">
+                    <div class="hidden lg:flex flex-col justify-center">
                         <img src="assets/images/hero-image.png" alt="Hero">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="bg-secondary min-h-screen pb-10 relative">
+        <section class="bg-secondary min-h-screen py-10 relative">
             <img src="assets/icons/abstract-rectangle-2.svg" alt="" class="absolute left-0">
             <div class="container relative flex flex-col justify-center items-center min-h-screen">
                 <h2 class="font-medium text-3xl text-center leading-normal mb-24">
@@ -79,7 +82,7 @@
                     everyone. Use for whatever you want, <br>
                     it's completely free!
                 </h2>
-                <div class="grid grid-cols-3 gap-8">
+                <div class="grid grid-rows-3 lg:grid-rows-none lg:grid-cols-3 gap-8">
                     <div class="bg-dark h-364px rounded-xl shadow-2xl shadow-primary text-white p-14">
                         <div class="bg-dark-light flex justify-center items-center w-20 h-20 p-5 mb-5 rounded-md">
                             <img src="assets/icons/pen.svg" alt="Pen">
@@ -115,8 +118,8 @@
             <img src="assets/icons/circle-transparent-small.svg" alt="" class="absolute top-10 right-0">
             <img src="assets/icons/circle-transparent-big.svg" alt="" class="absolute top-20 right-0">
             <div class="container relative flex justify-between items-center">
-                <div class="grid grid-cols-2">
-                    <div class="flex flex-col justify-center">
+                <div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2">
+                    <div class="flex flex-col justify-center order-last lg:order-first">
                         <h2 class="font-medium text-3xl leading-normal mb-4">
                             There are <u>80+ Pre-Designed</u> Templates Ready to Use
                         </h2>
@@ -146,7 +149,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="flex flex-col justify-center">
+                    <div class="flex flex-col justify-center order-first lg:order-last">
                         <img src="assets/images/highlight-image.png" alt="Highlight Image">
                     </div>
                 </div>
@@ -156,7 +159,7 @@
             <img src="assets/icons/abstract-diamond-1.svg" alt="" class="absolute top-14 left-0">
             <img src="assets/icons/abstract-diamond-2.svg" alt="" class="absolute top-28 left-0">
             <div class="container relative flex justify-between items-center">
-                <div class="grid grid-cols-2">
+                <div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2">
                     <div class="flex flex-col justify-center">
                         <img src="assets/images/highlight-image-2.png" alt="Highlight Image">
                     </div>
@@ -217,8 +220,8 @@
         </section>
         <section class="bg-white flex items-center py-10 relative">
             <img src="assets/icons/circle-transparent-big.svg" alt="" class="absolute top-20 right-1">
-            <div class="container relative flex justify-between items-center py-24">
-                <div class="grid grid-cols-2">
+            <div class="container relative flex justify-between items-center">
+                <div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2">
                     <div class="flex flex-col justify-center">
                         <h2 class="font-medium text-3xl leading-normal mb-4">
                             Optimized For Posts on <u>All Social <br> 
@@ -250,54 +253,56 @@
         </section>
         <section class="bg-white flex items-center py-10 relative">
             <img src="assets/icons/rectangle-highlight.svg" alt="" class="absolute left-0">
-            <div class="container relative flex justify-between items-center py-24">
-                <div class="flex justify-center items-center">
-                    <img src="assets/images/highlight-image-4.png" alt="Highlight Image" class="">
-                </div>
-                <div class="w-537px">
-                    <h2 class="font-medium text-3xl leading-normal mb-4">
-                        Figma Social Feeds is Free For <u class="text-primary">Personal</u> or <u class="text-primary">Commercial</u> Use
-                    </h2>
-                    <p class="text-muted text-xl leading-relaxed mb-4">
-                        Figma Social Feeds is licensed under CC BY 4.0, which means you are free to use template designs for personal or commercial purposes with attribution to the template design creator.
-                    </p>
-                    <div class="flex flex-row gap-4 mb-7">
-                        <ul class="leading-relaxed">
-                            <li class="flex flex-row justify-start items-center gap-4">
-                                <img src="assets/icons/check.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
-                                <p>
-                                    Design content for products to be sold
-                                </p>
-                            </li>
-                            <li class="flex flex-row justify-start items-center gap-4">
-                                <img src="assets/icons/check.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
-                                <p>
-                                    Design content to offer services
-                                </p>
-                            </li>
-                            <li class="flex flex-row justify-start items-center gap-4">
-                                <img src="assets/icons/check.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
-                                <p>
-                                    Create product that include Social Feeds as features in it
-                                </p>
-                            </li>
-                            <li class="flex flex-row justify-start items-center gap-4">
-                                <img src="assets/icons/close.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
-                                <p>
-                                    Resell it without making significant changes
-                                </p>
-                            </li>
-                            <li class="flex flex-row justify-start items-center gap-4">
-                                <img src="assets/icons/close.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
-                                <p>
-                                    Create design generator tool that include Social Feeds
-                                </p>
-                            </li>
-                        </ul>
+            <div class="container relative flex justify-between items-center">
+                <div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2">
+                    <div class="flex justify-center items-center">
+                        <img src="assets/images/highlight-image-4.png" alt="Highlight Image" class="">
                     </div>
-                    <a href="javascript:;" class="bg-white border-primary border-2 rounded-md box-border px-4 py-5">
-                        <span class="mr-2">Read license</span>&nbsp;<img src="/assets/icons/external-link.svg" class="inline" alt="External link">
-                    </a>
+                    <div class="flex flex-col justify-center">
+                        <h2 class="font-medium text-3xl leading-normal mb-4">
+                            Figma Social Feeds is Free For <u class="text-primary">Personal</u> or <u class="text-primary">Commercial</u> Use
+                        </h2>
+                        <p class="text-muted text-xl leading-relaxed mb-4">
+                            Figma Social Feeds is licensed under CC BY 4.0, which means you are free to use template designs for personal or commercial purposes with attribution to the template design creator.
+                        </p>
+                        <div class="flex flex-row gap-4 mb-7">
+                            <ul class="leading-relaxed">
+                                <li class="flex flex-row justify-start items-center gap-4">
+                                    <img src="assets/icons/check.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
+                                    <p>
+                                        Design content for products to be sold
+                                    </p>
+                                </li>
+                                <li class="flex flex-row justify-start items-center gap-4">
+                                    <img src="assets/icons/check.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
+                                    <p>
+                                        Design content to offer services
+                                    </p>
+                                </li>
+                                <li class="flex flex-row justify-start items-center gap-4">
+                                    <img src="assets/icons/check.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
+                                    <p>
+                                        Create product that include Social Feeds as features in it
+                                    </p>
+                                </li>
+                                <li class="flex flex-row justify-start items-center gap-4">
+                                    <img src="assets/icons/close.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
+                                    <p>
+                                        Resell it without making significant changes
+                                    </p>
+                                </li>
+                                <li class="flex flex-row justify-start items-center gap-4">
+                                    <img src="assets/icons/close.svg" alt="" class="inline h-8 w-8 relative -top-2 pt-2">
+                                    <p>
+                                        Create design generator tool that include Social Feeds
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="bg-white border-primary w-max border-2 rounded-md box-border px-4 py-5">
+                            <span class="mr-2">Read license</span>&nbsp;<img src="/assets/icons/external-link.svg" class="inline" alt="External link">
+                        </a>
+                    </div>    
                 </div>
             </div>
         </section>
@@ -314,7 +319,7 @@
                 <p class="text-muted text-center mb-10">
                     Figma Social Feeds is free for everyone, create content for promotion, share insights and get creative on the internet.
                 </p>
-                <div class="flex flex-row gap-4 translate-x-14">
+                <div class="grid grid-rows-3 lg:grid-rows-none lg:grid-cols-3 gap-4 translate-x-0 lg:translate-x-28">
                     <a href="javascript:;" class="bg-primary shadow-2xl shadow-primary h-min px-8 py-5 text-white font-bold rounded-md">
                         <img src="assets/icons/download.svg" alt="Download" class="inline mr-2">&nbsp;
                         <span>Download Now</span>
@@ -323,7 +328,7 @@
                         <span class="mr-2">Say Thanks</span>&nbsp;
                         <img src="assets/icons/twitter.svg" alt="Tweet" class="inline">
                     </a>
-                    <img src="/assets/icons/tweet-now.svg" alt="Tweet Now" class="block relative top-10">
+                    <img src="/assets/icons/tweet-now.svg" alt="Tweet Now" class="hidden lg:block relative top-10">
                 </div>
             </div>
         </section>
@@ -332,7 +337,7 @@
         <section class="bg-dark h-40 relative top-24 -skew-y-3"></section>
         <section class="bg-dark py-10 relative">
             <div class="container relative text-white py-16">
-                <div class="grid grid-cols-2 gap-9 mb-16">
+                <div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-9 mb-16">
                     <div class="">
                         <img src="/assets/images/logo-short.png" alt="Logo" class="mb-4">
                         <h2 class="font-bold mb-4">Wumbo</h2>
@@ -401,3 +406,15 @@
     </footer>
 </body>
 </html>
+
+<script>
+    document.getElementById('hamburger-btn').addEventListener('click', function() {
+        var navLink = document.getElementById('nav-link');
+        var downloadNavBtn = document.getElementById('download-nav-btn');
+
+        navLink.classList.toggle('hidden');
+        navLink.classList.toggle('flex');
+        downloadNavBtn.classList.toggle('hidden');
+        downloadNavBtn.classList.toggle('block');
+    })
+</script>
