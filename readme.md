@@ -6,6 +6,3 @@ Run the CLI tool to scan your template files for classes and build your CSS.
 ```
 npx tailwindcss -i ./raw.css -o ./app.css --watch
 ```
-
-## Note
-This is not responsive yet 
