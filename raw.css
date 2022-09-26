@@ -6,3 +6,7 @@ body {
     font-family: "DM Sans", sans-serif;
     @apply text-base text-dark;
 }
+
+.btn {
+    @apply bg-blue-500 text-white
+}
